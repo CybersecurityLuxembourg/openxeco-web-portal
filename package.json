@@ -1,0 +1,47 @@
+{
+  "name": "fo-front-generic",
+  "version": "1.6.0",
+  "private": false,
+  "dependencies": {
+    "dompurify": "^2.2.6",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "react": "^16.14.0",
+    "react-big-calendar": "^0.30.0",
+    "react-bootstrap": "^1.5.1",
+    "react-country-region-selector": "^3.0.2",
+    "react-dom": "^16.3.1",
+    "react-helmet": "^6.1.0",
+    "react-notifications": "^1.6.0",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^3.2.0",
+    "reactjs-popup": "^2.0.4"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext .js --ext .jsx",
+    "lint-fix": "eslint --fix --ext .js --ext .jsx src"
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "react-scripts": "4.0.3",
+    "source-map-explorer": "^1.6.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

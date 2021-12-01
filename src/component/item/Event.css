@@ -1,0 +1,58 @@
+
+.Event {
+    margin: 5px 0px !important;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+.Event:hover {
+    color: initial !important;
+    background-color: #fff7f8;
+}
+
+.Event-link {
+    color: inherit;
+}
+
+.Event-link:hover{
+    text-decoration: none;
+}
+
+.Event .card-img-wrapper {
+    position: relative;
+    min-height: 150px;
+}
+
+.Event .card-date {
+    position: absolute;
+    background: #e40613;
+    text-align: center;
+    font-family: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10px;
+    color: #fff;
+    bottom: 0;
+    right: 10px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.Event .card-type {
+    position: absolute;
+    background: #e40613;
+    text-align: center;
+    font-family: "Fjalla One", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 10px;
+    color: #fff;
+    top: 0;
+    left: 10px;
+    text-transform: uppercase;
+}
+
+.Event .card-body button {
+    background-color: #e40613;
+}
+
+.Event .card-text {
+    line-height: 1.2;
+    margin-bottom: 15px;
+}

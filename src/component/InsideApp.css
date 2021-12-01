@@ -1,0 +1,10 @@
+
+#InsideApp {
+	position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+#InsideApp-content {
+    width: 100%;
+}
