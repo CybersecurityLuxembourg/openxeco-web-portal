@@ -4,16 +4,16 @@ export function getApiURL() {
 		|| window.location.hostname === "") {
 		return "http://localhost:5000/";
 	}
-	return "https://api.cybersecurity-luxembourg.com/";
+	return "https://api." + window.location.hostname.split(".").slice(-2).join(".");
 }
 
 export function getCommunityAppURL() {
 	if (window.location.hostname === "localhost"
 		|| window.location.hostname === "127.0.0.1"
 		|| window.location.hostname === "") {
-		return "http://localhost:5000/";
+		return "http://localhost:3001/";
 	}
-	return "https://community.cybersecurity-luxembourg.com/";
+	return "https://community." + window.location.hostname.split(".").slice(-2).join(".");
 }
 
 export function isInternetExplorer() {
