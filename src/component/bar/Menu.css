@@ -60,6 +60,7 @@
 .nav-link {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+    min-width: 100px;
 }
 
 .nav-link i {
