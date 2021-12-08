@@ -5,7 +5,6 @@ export function getApiURL() {
 		return "http://localhost:5000/";
 	}
 	return "https://api." + window.location.hostname.replace("www.", "");
-	return "https://api." + window.location.hostname.split(".").slice(-2).join(".");
 }
 
 export function getCommunityAppURL() {
