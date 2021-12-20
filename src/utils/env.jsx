@@ -13,7 +13,7 @@ export function getCommunityAppURL() {
 		|| window.location.hostname === "") {
 		return "http://localhost:3001/";
 	}
-	return "https://community." + window.location.hostname.replace("www.", "");
+	return "https://my." + window.location.hostname.replace("www.", "");
 }
 
 export function isInternetExplorer() {
