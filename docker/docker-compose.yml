@@ -1,0 +1,7 @@
+version: "3"
+services:
+  bo-front:
+    image: "cybersecurityluxembourg-fo-front-generic:latest"
+    restart: always
+    ports:
+      - 3005:3005
