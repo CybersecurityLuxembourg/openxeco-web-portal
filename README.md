@@ -8,7 +8,7 @@ With the following link: https://nodejs.org/en/download/
 >npm update
 
 # Install the dependencies
->cd ~/project/fo-front-generic
+>cd ~/project/openxeco-web-portal
 >npm install
 
 # Run the project
