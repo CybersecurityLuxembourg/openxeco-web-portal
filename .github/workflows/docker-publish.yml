@@ -7,9 +7,6 @@ on:
   pull_request:
     branches: [ main ]
 
-env:
-  COMPONENT: openxeco-web-portal
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,7 +31,7 @@ jobs:
 
     - name: Get repository name
       id: repository
-      run: echo "::set-output name=pathref::$(echo '${{ github.repository }}' | cut -d'/' -f2)-${{ env.COMPONENT }}-$(echo '${{ github.ref_name }}' | sed 's/[^[:alnum:]\.]/_/g')"
+      run: echo "::set-output name=pathref::$(echo '${{ github.repository }}' | cut -d'/' -f2)-$(echo '${{ github.ref_name }}' | sed 's/[^[:alnum:]\.]/_/g')"
 
     - name: create artifact archive
       run: |
@@ -45,6 +42,6 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          ${{ env.COMPONENT }}/${{ steps.repository.outputs.pathref }}.tar.gz
+          ${{ steps.repository.outputs.pathref }}.tar.gz
         fail_on_unmatched_files: true
       if: startsWith(github.ref, 'refs/tags/')
